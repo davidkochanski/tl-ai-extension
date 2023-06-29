@@ -1,0 +1,24 @@
+:root {
+    --width: 500px;
+    --height: 600px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: var(--width);
+    height: var(--height);
+}
+
+header {
+    width: var(--width);
+    height: 65px;
+    display: flex;
+    align-items: center;
+    background-color: green;
+}
+
