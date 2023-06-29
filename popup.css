@@ -3,6 +3,12 @@
     --height: 600px;
 }
 
+@font-face {
+    font-family: Consolas;
+    src: url(fonts/consolas.ttf);
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,6 +18,8 @@
 body {
     width: var(--width);
     height: var(--height);
+    background: linear-gradient(to top, #111, #222);
+    backdrop-filter: blur(10px);
 }
 
 header {
@@ -19,6 +27,29 @@ header {
     height: 65px;
     display: flex;
     align-items: center;
-    background-color: green;
+    background-color: #00A36C;
 }
+
+h1 {
+    font-family: Consolas;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-family: Consolas;
+    font-size: 24px;
+    border-radius: 16px;
+    background-color: red;
+}
+
 
